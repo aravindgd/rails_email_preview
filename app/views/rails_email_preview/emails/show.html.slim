@@ -14,8 +14,6 @@
         -# Locale, format and actions
         div class=rep_col_class(4)
           ul.list-unstyled.text-right.rep-email-options
-            - if I18n.available_locales.length > 1
-              li= render 'rails_email_preview/emails/i18n_nav'
             - if RailsEmailPreview.enable_send_email
               li= render 'rails_email_preview/emails/send_form'
             li= render 'rails_email_preview/emails/format_nav'
